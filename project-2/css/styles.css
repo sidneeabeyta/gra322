@@ -63,7 +63,19 @@ figcaption {
     font-size: 13px;
     font-style: italic;
     letter-spacing: 1px;
-    
+}
+
+.sample {
+    padding: 5rem 0;
+}
+
+footer {
+    padding: 1.5 0;
+    background-color: var(--light-grey);
+}
+
+footer p {
+    margin-bottom: 0;
 }
 
 @media screen and (min-width: 800px) {
