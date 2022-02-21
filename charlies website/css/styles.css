@@ -1,27 +1,26 @@
 html {
-    --grey:#444;
-    --dark-grey:#333;
-    --light-grey:#f2f2f2;
+    --beige:#DDDBD4;
+    --pink:##F15C5B;
+    --type:##333;
 }
 
 body {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 h1 {
-    color: #fff;
-    font-weight: 300;
-    font-size: 18px;
+    color: var(t--type);
+    font-weight: 700;
+    font-size: 20px;
     letter-spacing: 1px;
 
 }
 
 h2 {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
     letter-spacing: 2px;
-    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
@@ -29,6 +28,11 @@ p {
     letter-spacing: 1px;
     line-height: 1.5;
     margin-bottom:1rem;
+}
+
+.text-block {
+    font-style: bold;
+    max-width: 114px;
 }
 
 .grid {
@@ -78,8 +82,8 @@ footer p {
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 800px) {
-    .two-column {
+@media screen and (min-width: 325px) {
+    .one-column {
         display: grid;
         grid-gap: 3rem;
         grid-template-columns: 1fr 1fr;
