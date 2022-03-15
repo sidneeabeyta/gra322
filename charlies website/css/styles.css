@@ -106,7 +106,7 @@ header {
 
 .menu-container {
     display: grid;
-    gap: 1rem;
+    gap: 200px;
     grid-template-columns: 2fr 2fr;
     border-bottom: 5px solid var(--pink);
     padding: 0rem 150px 5rem 150px;
@@ -121,7 +121,7 @@ header {
 }
 
 table {
-    width: 450px;
+    width: 600px;
 }
 
 th {
@@ -203,10 +203,29 @@ footer h2 {
     padding-top: 1rem;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 400px) {
     .menu-container {
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 200px;
+        grid-template-columns: 1fr;
+        border-bottom: 5px solid var(--pink);
+        padding: 0rem 150px 5rem 150px;
     }
+    .location-container {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: 1fr;
+        border-bottom: 5px solid var(--pink);
+        padding: 3rem 150px;
+    }
+        .hero {
+            background-image: url("../img/header-image.jpg");
+            background-size: cover;
+            color: var(--type);
+            border-bottom: 10px solid var(--pink);
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023) {
