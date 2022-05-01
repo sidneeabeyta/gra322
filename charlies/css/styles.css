@@ -1,0 +1,240 @@
+html {
+    --beige:#e2dcd9;
+    --pink:#F15C5B;
+    --type:#333;
+}
+
+h1 {
+    color: var(t--type);
+    font-weight: 700;
+    font-size: 62px;
+    letter-spacing: 1px;
+    padding-top: 300px;
+    border-bottom: 5px solid var(--pink);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: var(--type);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+p {
+    font-weight: 400px;
+    font-size: 24px;
+    padding:0 0 20px 0;
+    color: var(--type);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: var(--beige);
+}
+
+.hero {
+    background-image: url("../img/header-image.jpg");
+    background-size: cover;
+    color: var(--type);
+    border-bottom: 10px solid var(--pink);
+}
+
+header {
+    color: var(--type);
+    font-weight: 700;
+    padding: 0 150px;
+}
+
+.links {
+    display: flex;
+}
+
+.links img {
+    height: 55px;
+    display: inline;
+}
+
+.order {
+    margin-left: auto;
+}
+
+.links li {
+    padding: 2rem;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.text-block {
+    font-weight: 700;
+    padding: 0 150px;
+    width: 700px
+}
+
+.text-block p {
+    width: 331px;
+    padding-top: 1rem;
+}
+
+.fresh{
+    font-weight: 700;
+    padding: 0 150px 5rem 150px;
+    width: 725px
+}
+
+.fresh h2 {
+    color: var(t--type);
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 1px;
+    padding-top: 1000px;
+    border-bottom: 5px solid var(--pink);
+}
+
+.fresh p {
+    width:410px;
+    padding-top: 1rem;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.menu-container {
+    display: grid;
+    gap: 200px;
+    grid-template-columns: 2fr 2fr;
+    border-bottom: 5px solid var(--pink);
+    padding: 0rem 150px 5rem 150px;
+}
+
+.menu-title h2{
+    text-align: center;
+    padding-top:2rem;
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 600px;
+}
+
+th {
+    text-align: left;
+    padding-top: 2.5rem;
+    font-size: 24px;
+}
+
+td {
+    padding-top: 1.5rem;
+    font-size: 24px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 3px solid var(--pink);
+}
+
+.menu img {
+    border-radius: 65px;
+    border: 3px solid var(--pink);
+    max-width: 300px;
+    margin-top: 1rem;
+}
+
+.image-container {
+    display:inline-flex;
+    border-bottom: 5px solid var(--pink);
+    height: 350px;
+    margin-right: -2rem;
+}
+
+.location-container {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 2fr 2fr;
+    border-bottom: 5px solid var(--pink);
+    padding: 3rem 150px;
+}
+
+.location h2 {
+    color: var(t--type);
+    font-weight: 700;
+    font-size: 65px;
+    letter-spacing: 1px;
+    border-bottom: 5px solid var(--pink);
+    width: 450px;
+}
+.location p {
+    margin-top: 1rem;
+}
+
+.location img {
+    border: 3px solid var(--pink);
+    width: 620px;
+    height: 458px;
+}
+
+footer {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 2fr 2fr;
+    padding: 3rem 150px;
+    background-color: var(--pink);
+}
+
+footer h2 {
+    padding-bottom: 2rem;
+}
+
+.logos img{
+    height: 55px;
+    display: inline;
+    padding-right: 3rem;
+}
+
+.logos p {
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .menu-container {
+        display: grid;
+        gap: 200px;
+        grid-template-columns: 1fr;
+        border-bottom: 5px solid var(--pink);
+        padding: 0rem 150px 5rem 150px;
+    }
+    .location-container {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: 1fr;
+        border-bottom: 5px solid var(--pink);
+        padding: 3rem 150px;
+    }
+    .hero {
+        background-image: url("../img/header-image.jpg");
+        background-size: cover;
+        color: var(--type);
+        border-bottom: 10px solid var(--pink);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023) {
+    .location-container {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: 1fr;
+        border-bottom: 5px solid var(--pink);
+        padding: 3rem 150px;
+}
+
+@media screen and (min-width: 1024px) {
+}
