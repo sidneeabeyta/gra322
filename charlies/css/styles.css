@@ -7,14 +7,13 @@ html {
 h1 {
     color: var(t--type);
     font-weight: 700;
-    font-size: 62px;
+    font-size: 24px;
     letter-spacing: 1px;
-    padding-top: 300px;
     border-bottom: 5px solid var(--pink);
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 1rem;
@@ -22,7 +21,7 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -41,25 +40,53 @@ body {
 }
 
 .hero {
-    background-image: url("../img/header-image.jpg");
-    background-size: cover;
-    color: var(--type);
+    background-image: url("../img/coffee-head-h.jpg");
+    color: var(--beige);
     border-bottom: 10px solid var(--pink);
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 header {
     color: var(--type);
     font-weight: 700;
-    padding: 0 150px;
+    padding: 0 3rem;
+    color: var(--beige);
+}
+
+.open {
+    right: 1rem;
+}
+
+.hero div {
+    transition: all .25s ease-out;
 }
 
 .links {
     display: flex;
 }
 
-.links img {
+button {
+    float: right;
+    margin-top: 3rem;
+    font-size: 24px;
+    color:#333;
+    background-color:#F15C5B;
+}
+
+.my-button {
+    transition: all .25s ease-out;
+}
+
+.my-button:hover {
+    background-color:#e2dcd9;
+    color:#F15C5B;
+}
+
+.hero img {
     height: 55px;
-    display: inline;
+    float: left;
+    margin-top: 3rem
 }
 
 .order {
@@ -73,120 +100,111 @@ header {
 }
 
 .text-block {
-    font-weight: 700;
-    padding: 0 150px;
-    width: 700px
+    padding: 10rem 3rem 5rem 3rem;
+    width: auto;
+    color: var(--beige);
 }
 
 .text-block p {
-    width: 331px;
     padding-top: 1rem;
+    font-size: 14px;
+    color: var(--beige);
 }
 
 .fresh{
     font-weight: 700;
-    padding: 0 150px 5rem 150px;
-    width: 725px
+    padding: 0 3rem 5rem 3rem;
+    width: auto;
+    background-color:#F15C5B;
+    color:#333;
 }
 
-.fresh h2 {
+.fresh h1 {
     color: var(t--type);
     font-weight: 700;
-    font-size: 65px;
     letter-spacing: 1px;
-    padding-top: 1000px;
-    border-bottom: 5px solid var(--pink);
+    padding-top: 5rem;
+    border-bottom: 5px solid var(--type);
 }
 
 .fresh p {
-    width:410px;
     padding-top: 1rem;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .menu-container {
     display: grid;
-    gap: 200px;
-    grid-template-columns: 2fr 2fr;
     border-bottom: 5px solid var(--pink);
-    padding: 0rem 150px 5rem 150px;
+    padding: 3rem 3rem 0rem 3rem;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+
 }
 
-.menu-title h2{
+.menu-title h1{
     text-align: center;
     padding-top:2rem;
     font-weight: 700;
-    font-size: 65px;
     letter-spacing: 1px;
+    border-bottom: none;
 }
 
 table {
-    width: 600px;
+    width: 100%;
 }
 
 th {
     text-align: left;
     padding-top: 2.5rem;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 td {
     padding-top: 1.5rem;
-    font-size: 24px;
+    font-size: 14px;
+    position: relative;
 }
 
 .name {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 700;
     border-bottom: 3px solid var(--pink);
 }
 
-.menu img {
-    border-radius: 65px;
-    border: 3px solid var(--pink);
-    max-width: 300px;
-    margin-top: 1rem;
-}
-
-.image-container {
-    display:inline-flex;
-    border-bottom: 5px solid var(--pink);
-    height: 350px;
-    margin-right: -2rem;
-}
-
 .location-container {
     display: grid;
-    gap: 5rem;
-    grid-template-columns: 2fr 2fr;
+    gap: 2rem;
+    grid-template-columns: 1fr;
     border-bottom: 5px solid var(--pink);
-    padding: 3rem 150px;
+    padding: 3rem 3rem 5rem 3rem;
 }
 
-.location h2 {
+.location h1 {
     color: var(t--type);
     font-weight: 700;
-    font-size: 65px;
     letter-spacing: 1px;
     border-bottom: 5px solid var(--pink);
-    width: 450px;
+    width: auto;
 }
 .location p {
     margin-top: 1rem;
+    position: relative;
+    font-size: 14px;
 }
 
 .location img {
     border: 3px solid var(--pink);
-    width: 620px;
-    height: 458px;
+    width: 300px;
+    height: 300px;
+    position: relative;
 }
 
 footer {
     display: grid;
     gap: 5rem;
-    grid-template-columns: 2fr 2fr;
-    padding: 3rem 150px;
+    grid-template-columns: 1fr;
+    padding: 5rem 3rem 0rem 3rem;
     background-color: var(--pink);
 }
 
@@ -204,37 +222,81 @@ footer h2 {
     padding-top: 1rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 800px) {
     .menu-container {
-        display: grid;
+        display:grid;
         gap: 200px;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         border-bottom: 5px solid var(--pink);
         padding: 0rem 150px 5rem 150px;
     }
     .location-container {
         display: grid;
         gap: 5rem;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         border-bottom: 5px solid var(--pink);
-        padding: 3rem 150px;
+        padding: 3rem 150px 5rem 150px;
     }
+
     .hero {
-        background-image: url("../img/header-image.jpg");
+        background-image: url("../img/coffee-head-h.jpg");
         background-size: cover;
         color: var(--type);
         border-bottom: 10px solid var(--pink);
     }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023) {
-    .location-container {
+    .location img {
+        width: 400px;
+        height: 400px;
+    }
+    footer {
         display: grid;
-        gap: 5rem;
-        grid-template-columns: 1fr;
-        border-bottom: 5px solid var(--pink);
-        padding: 3rem 150px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .fresh{
+        padding: 0 150px 5rem 150px;
+    }
+    .text-block {
+        padding: 300px 150px;
+        width: 700px
+    }
+    .header {
+        padding: 0 150px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 62px; 
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 24px;
+    }
+    .fresh p {
+        font-size: 24px;
+    }
+    .text-block p {
+        font-size: 24px;
+    }
+    th {
+        font-size: 24px;
+    }
+    td {
+        font-size: 24px;
+    }
+    .name {
+        font-size: 24px;
+    }
+    .location p {
+        font-size: 24px;
+    }
+    .location img {
+        width: 620px;
+        height: 458px;
+    }
 }

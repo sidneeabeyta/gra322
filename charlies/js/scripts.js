@@ -1,6 +1,5 @@
-$(document).ready(function(){
-    $('nav').hide();
+$(".links").hide();
 
-    $('.menu-button').click(funtion)
-    
-}
+$(".my-button").click(function() {
+    $(".links").toggleClass("open");
+  });
